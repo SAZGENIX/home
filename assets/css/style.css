@@ -18930,7 +18930,7 @@ img.img-grayscale {
 .nav-pills .nav-link {
   cursor: pointer;
   margin-bottom: 15px;
-  color: var(--bs-gray-700);
+  color: var(--bs-gray-300);
   padding: 0.5rem 1rem;
 }
 
