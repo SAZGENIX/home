@@ -1,737 +1,834 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<title></title>
-	<!-- Meta Tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="">
-	<meta name="description" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SAZGENIX</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Custom Font Icons CSS-->
+  <link rel="stylesheet" href="css/landy-iconfont.css">
+  <!-- Google fonts - Open Sans-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+  <!-- owl carousel-->
+  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link
+    href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+    rel="stylesheet" />
+  <style>
+    /* .cutom-hero {
+      background-image: url("img/heroimage.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 20px;
+      height: 100vh;
+      padding-top: 200px;
+    } */
 
-	<!-- Google Font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap"
-		rel="stylesheet">
+    @font-face {
+      font-family: 'lemon-medium';
+      src: url("/fonts/LemonMilkRegular-X3XE2.otf");
+    }
 
-	<!-- Plugins CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/tiny-slider.css">
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* Set left to 0 to start from the left edge of the screen */
+      width: 100%;
+      /* Make the video width 100% of the container */
+      /* Make the video height 100% of the container */
+      width: fit-content;
+      object-fit: cover;
+      /* Maintain aspect ratio and cover the entire container */
+      z-index: -1;
+    }
 
-	<!-- Theme CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    ::placeholder {
+      color: black;
+    }
+
+    /* Style form fields with white background */
+    .form-control {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      /* Set border color for the fields */
+    }
+
+    /* Style button with specified color */
+    .btn-outline-primary {
+      background-color: #001a33;
+      color: white;
+      border: 1px solid black;
+      /* Set border color for the button */
+    }
+
+    /* Style form borders when focused */
+    .form-control:focus {
+      border: 1px solid black;
+    }
+
+    .phone-size {
+      color: white;
+      width: 100%;
+      font-family: 'lemon-medium';
+      font-weight: normal;
+      font-size: 60px;
+      
+
+    }
+
+    @media(max-width: 520px) {
+      .numbers {
+        font-size: 10px;
+      }
+
+      .phone-size {
+        font-size: 50px;
+      }
+    }
+  </style>
 </head>
 
-<body style="opacity: 1;">
+<body>
 
-	<!-- Offcanvas end START -->
-	<div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEnd"
-		style="background-color: #171c21;">
-		<div class="position-relative">
-			<div class="position-absolute top-0 end-0 m-5">
-				<a class="ms-auto btn btn-primary btn-round zoom-hover" data-bs-dismiss="offcanvas" aria-label="Close">
-					<i class="fas fa-times p-0"></i>
-				</a>
-			</div>
-		</div>
-		<div class="offcanvas-body vh-lg-100 py-0 px-5 px-md-6">
 
-			<div class="row">
-				<div class="col-md-8 vh-lg-100" style="--bs-border-opacity: .1;">
-					<ul class="nav dropdown-toggle-start-icon d-block flex-column mt-7 ms-5">
-						<li class="nav-item display-5 h5 position-relative ">
-							<a href="#" class="nav-link d-block" style="color: #5cb4c0;">HOME</a>
-						</li>
-						<li class="nav-item display-5 h5">
-							<a class="nav-link text-white" href="#">WHO WE ARE</a>
-						</li>
-						<li class="nav-item display-5 h5">
-							<a class="nav-link text-white" href="#">OUR SERVICES</a>
-						</li>
-						<li class="nav-item display-5 h5">
-							<a class="nav-link text-white" href="#">WHY CHOOSE US</a>
-						</li>
-						<li class="nav-item display-5 h5">
-							<a class="nav-link text-white" href="#">CONTACT US</a>
-						</li>
-						</li>
-					</ul>
-				</div>
-			</div>
+  <!-- navbar
+    -->
 
-		</div>
-	</div>
-	<!-- Offcanvas end END -->
+  <header id="top-bar" class="header">
+    <div
+      style="display: flex; align-items: center; justify-content: space-between; background-color: white; padding-left: 3%; padding-right: 3%; background-image: linear-gradient(to right, #001a33 , #0066cc, #001a33);"
+      class="top-bar">
 
-	<header class="navbar-transparent">
-		<div class="navbar-top d-none d-lg-block">
-			<div class="container">
-				<div class="d-md-flex justify-content-between align-items-center">
-					<div class="d-flex align-items-center justify-content-center">
-						<ul class="nav justify-content-center justify-content-md-start">
-							<li class="nav-item me-3">
-								<a class="navbar-link text-navyblue text-skyblue-hover fw-semibold" href="tel:+91 1943100051">
-									<i class="fas fa-headset me-2 text-skyblue"></i>
-									+91 1943100051
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="navbar-link text-navyblue text-skyblue-hover fw-semibold" href="tel:+917006857402">
-									<i class="fas fa-headset me-2 text-skyblue"></i>
-									+91 7006857402
-								</a>
-							</li>
-						</ul>
-					</div>
 
-					<div class="d-flex align-items-center justify-content-center">
-						<ul class="list-unstyled d-flex">
-							<li>
-								<a class="text-navyblue text-skyblue-hover px-2" href="#">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-							</li>
-							<li>
-								<a class="text-navyblue text-skyblue-hover px-2" href="#">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a class="text-navyblue text-skyblue-hover px-2" href="#">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a class="text-navyblue text-skyblue-hover ps-2" href="#">
-									<i class="fab fa-youtube"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="divider-light opacity-1"></div>
+      <div class="numbers" style="display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 5px;
+            ">
 
-		<nav class="navbar navbar-dark navbar-expand-lg">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="assets/images/sazgenix.svg" alt="sazgenix" width="260">
-				</a>
+        <span style="color:#001a33; display: flex; align-items: center; gap: 10px;"><iconify-icon
+            icon="ri:customer-service-fill" style="color: white;" width="14" height="14"></iconify-icon> <span> <a
+              class="numbers" href="tel:+91 7006857402"
+              style="font-weight: normal; text-decoration: none; color: white">+91-7006857402</a>
+          </span></span>
 
-				<div class="nav flex-nowrap align-items-center">
-					<div class="nav-item d-none d-xl-block">
-						<a href="#" class="btn btn-sm btn-primary mb-0 mx-2">Get Quote!</a>
-					</div>
-					<div class="nav-item">
-						<a class="nav-link pe-0" data-bs-toggle="offcanvas" href="#offcanvasEnd" role="button"
-							aria-controls="offcanvasEnd">
-							<i class="bi bi-text-right text-navyblue rtl-flip display-8" data-bs-target="#offcanvasEnd"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
+        <span style="color:#001a33; display: flex; align-items: center; gap: 10px;"><iconify-icon
+            style="padding-left:15px; color: white;" icon="ri:customer-service-fill" width="14"
+            height="14"></iconify-icon> <span> <a class="numbers" href="tel:+91 1943100051"
+              style=" font-weight: normal; text-decoration: none; color: white;">+91-1943100051</a>
+          </span></span>
 
-	<!-- MAIN CONTENT START -->
-	<main style="background-color: #f0f4ff!important;
-	background-image: url(assets/images/bg_patern.png)!important;">
+      </div>
 
-		<section class="position-relative overflow-hidden p-0 mb-11">
-			<div class="content vh-lg-100 h-md-600 h-500">
-				<div class="position-absolute top-50 start-50 translate-middle text-center z-index-99 w-100">
-					<h3 class="text-navyblue" style="font-size: 12rem;">
-						SAZGENIX
-					</h3>
-					<p class="lead text-navyblue fw-semibold" style="font-size: 2rem;">
-						Your Partner for Streamlined Backend Operations
-					</p>
-				</div>
 
-				<!-- Scoll Down -->
-				<div class="scroll-down overflow-visible d-none d-md-block mx-auto start-0 bottom-0">
-					<div class="scroll-line"></div>
-					<span class="scoll-text">Scroll Down</span>
-				</div>
-			</div>
-		</section>
+      <div class="social-media-icons" style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              ">
 
-		<!-- Main Banner START -->
-		<section class="position-relative bg-transparent p-0 d-none">
-			<!-- Banner START -->
-			<div
-				class="tiny-slider dots-white dots-bordered dots-end arrow-bordered arrow-large arrow-round arrow-start-bottom arrow-md-none">
-				<div class="tiny-slider-inner h-500 h-sm-700 h-xl-900" data-autoplay="true" data-autoplaytime="7000"
-					data-gutter="0" data-arrow="true" data-dots="true" data-items="1">
+        <a style="color:white; padding-top: 5px;" href="https://www.instagram.com/sazgenix_official/"
+          target="_blank"><iconify-icon icon="mdi:instagram" width="20" height="20"></iconify-icon></a>
 
-					<!-- Slide 1 START -->
-					<div class="h-100 bg-transparent">
-						<div class="container h-100">
-							<div class="row d-flex h-100">
-								<div class="col-md-8 justify-content-center align-self-center align-items-start">
-									<div class="slider-content text-start">
-										<h5 class="animate__animated animate__fadeInUp animate__delay-1s text-white mb-1 mb-md-4">
-											Branding, design and digital based</h5>
-										<h2
-											class="display-1 text-white-stroke text-primary-shadow d-block animate__animated animate__fadeInUp animate__delay-2s">
-											Agency</h2>
-										<p class="animate__animated animate__fadeInUp animate__delay-3s lead text-white">We're
-											digital creative agency. We help our customers better manage their web presence in
-											order to achieve greater success online.</p>
-										<div class="animate__animated animate__fadeInUp mt-4 animate__delay-4s"><a href="#"
-												class="btn btn-line text-white">How it works</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Slide 1 END -->
+        <a style="color:white; padding-top: 5px;" href="https://www.youtube.com/@SAZGENIX" target="_blank"><iconify-icon
+            icon="mdi:youtube" width="20" height="20"></iconify-icon></a>
 
-				</div>
-			</div>
-		</section>
-		<!-- Main Banner END -->
+        <a style="color:white; padding-top: 5px;" href="https://www.linkedin.com/company/sazgenix/"
+          target="_blank"><iconify-icon icon="mdi:linkedin" width="20" height="20"></iconify-icon></a>
 
-		<!-- Features START -->
-		<section class="position-relative rounded-5" style="background-color: #171c21;">
-			<div class="container mb-9">
-				<div class="row">
-					<div class="col-md-12 mt-md-0 mt-xl-n11">
-						<div class="h-600 h-lg-600" data-jarallax-video="https://www.youtube.com/watch?v=kd33UVZhnAA"
-							data-speed="1.2">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container" data-sticky-container="">
-				<div class="row d-flex justify-content-lg-between">
-					<div class="col-md-3 border-end border-light" style="--bs-border-opacity: .1;border-right: dashed;">
-						<div class="pb-5 pt-5" data-sticky="" data-margin-top="80" data-sticky-for="767">
-							<nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-								<nav class="nav nav-pills flex-column">
-									<a class="nav-link" href="#item-1">
-										WHO WE ARE
-									</a>
-									<a class="nav-link" href="#item-2">
-										OUR SERVICES
-									</a>
-									<a class="nav-link" href="#item-3">
-										WHY CHOOSE US
-									</a>
-								</nav>
-							</nav>
-						</div>
-					</div>
-					<div class="col-md-8 position-relative ms-4 ms-md-0 pb-5 pt-5">
-						<div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
-							class="scrollspy-example-2" tabindex="0">
-							<div class="mb-9" id="item-1">
-								<h5 class="display-7 h5" style="color: #5cb4c0;">
-									WHO
-								</h5>
-								<h5 class="display-3 h5 text-light mt-n3 mb-4">
-									WE ARE?
-								</h5>
-								<p class="lead text-light">
-									At <b>Sazgenix</b>, we're not just a service provider, we're your partners in achieving
-									operational excellence. With a team of seasoned professionals, we're committed to
-									revolutionizing the way businesses handle backend tasks, client interactions, and customer
-									service.
-								</p>
-								<p class="lead text-light">
-									Our mission is to empower you to focus on what truly matters while we handle the intricacies
-									behind the scenes.
-								</p>
-							</div>
-							<div class="mb-9" id="item-2">
-								<h5 class="display-3 h5 mt-n3 mb-5 text-light">
-									OUR <span style="color: #5cb4c0;">SERVICES</span>
-								</h5>
+        <a style="color:white; padding-top: 5px;"
+          href="https://www.facebook.com/people/Sazgenix-It-Solutions/61551862898595/" target="_blank"><iconify-icon
+            icon="ic:baseline-facebook" width="20" height="20"></iconify-icon></a>
+        <a style="color:white; padding-top: 5px;" href="https://twitter.com/sazgenix" target="_blank"><iconify-icon
+            icon="mdi:twitter" width="20" height="20"></iconify-icon></a>
 
-								<div class="row">
-									<div class="col-sm-12 mb-5">
-										<div class="text-start position-relative">
-											<h2 class="display-4 mb-0 text-light-stroke text-light-shadow">01</h2>
-											<h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block ms-3"
-												style="color: #5cb4c0;">Backend & Outsourcing <br>Solutions</h4>
-										</div>
-										<h5 class="text-white my-3">
-											Empowering Your Core Business
-										</h5>
-										<p class="text-secondary lead">
-											We understand that your core business demands your all attention. Leave the intricate
-											backend complexities to us. Our expert team manages the backend intricacies while you
-											focus on what you do best. Unlock your full potential with seamless backend solutions.
-										</p>
-									</div>
 
-									<div class="col-sm-12 mb-5">
-										<div class="text-start position-relative">
-											<h2 class="display-4 mb-0 text-light-stroke text-light-shadow">02</h2>
-											<h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block ms-3"
-												style="color: #5cb4c0;">Client Relations<br> Enhancement</h4>
-										</div>
-										<h5 class="text-white my-3">
-											Strengthening Connections, Simplifying Operations
-										</h5>
-										<p class="text-secondary lead">
-											Building strong client relationships is important. We excel in managing the backend of
-											client interactions, ensuring communication flows effortlessly, and responses are
-											delivered promptly.
-										</p>
-										<p class="text-secondary lead">
-											Create strong client connections without the hassle, as we handle the backend
-											intricacies and help you shine.
-										</p>
-									</div>
-
-									<div class="col-sm-12 mb-5">
-										<div class="text-start position-relative">
-											<h2 class="display-4 mb-0 text-light-stroke text-light-shadow">03</h2>
-											<h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block ms-3"
-												style="color: #5cb4c0;">Customer Service <br>Excellence</h4>
-										</div>
-										<h5 class="text-white my-3">
-											Raising Customer Satisfaction
-										</h5>
-										<p class="text-secondary lead">
-											Exceptional customer service is a cornerstone of success. With our dedicated backend
-											support, your customers experience top-notch service. From initial inquiries to
-											effective resolutions, we oversee the backend of customer interactions, leaving them
-											delighted and impressed.
-										</p>
-									</div>
-
-								</div>
-							</div>
-							<div id="item-3">
-								<h5 class="display-7 h5" style="color: #5cb4c0;">
-									WHY
-								</h5>
-								<h5 class="display-3 h5 text-light mt-n3 mb-4">
-									CHOOSE US?
-								</h5>
-								<p class="text-secondary lead">
-									At <b>Sazgenix</b>, we take pride in being more than just a service provider.
-								</p>
-								<ul class="list-group list-group-borderless list-group-icon-primary-bg my-4">
-									<li class="list-group-item text-light">
-										<span>
-											<i class="fas fa-check text-white bg-secondary"></i>
-										</span>Expertise & Dedication
-									</li>
-									<li class="list-group-item text-light">
-										<span>
-											<i class="fas fa-check text-white bg-secondary"></i>
-										</span>Streamlined Efficiency
-									</li>
-									<li class="list-group-item text-light">
-										<span>
-											<i class="fas fa-check text-white bg-secondary"></i>
-										</span>Tailored Solutions
-									</li>
-									<li class="list-group-item text-light">
-										<span>
-											<i class="fas fa-check text-white bg-secondary"></i>
-										</span>Reliable Support 24/7
-									</li>
-									<li class="list-group-item text-light">
-										<span>
-											<i class="fas fa-check text-white bg-secondary"></i>
-										</span>Data Security at the Core
-									</li>
-									<li class="list-group-item text-light">
-										<span>
-											<i class="fas fa-check text-white bg-secondary"></i>
-										</span>Customized Scalability for Growth
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-		<section class="pt-5 pb-4 position-relative">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="display-8 text-navyblue mb-5">
-							OUR SERVICES
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							CLOUD TECHNOLOGIES
-						</h5>
-						<p class="text-dark">
-							Cloud technology has revolutionized the way businesses operate, making them more agile, efficient,
-							and competitive. Its importance lies in its ability to drive innovation, reduce costs, enhance
-							security, and provide the scalability and flexibility needed to adapt to an ever-changing business
-							landscape. As a result, cloud technology has become an essential enabler of growth and
-							transformation across industries.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							CYBER SECURITY
-						</h5>
-						<p class="text-dark">
-							Cybersecurity is crucial for establishing trust with potential clients and conveying your expertise
-							in protecting digital assets. cybersecurity is not just a matter of protecting data; it's about
-							safeguarding the fabric of our modern society, our economy, and our individual and collective
-							well-being. As cyber threats continue to evolve, investing in robust cybersecurity measures is
-							essential to navigate the digital age safely and securely.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							APP DEVELOPMENT
-						</h5>
-						<p class="text-dark">
-							App development is a strategic investment for businesses and organizations looking to stay
-							competitive, engage with customers effectively, and adapt to the evolving digital landscape. It
-							offers opportunities for growth, improved user experiences, and a stronger online presence.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							UI/UX DESIGN
-						</h5>
-						<p class="text-dark">
-							UI/UX design is integral to the success of digital products and services. It not only makes
-							products more user-friendly but also contributes to user satisfaction, brand reputation, and
-							business outcomes. Investing in UI/UX design is an investment in the long-term success and
-							competitiveness of a digital product or service.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							AI/ML PROJECTS
-						</h5>
-						<p class="text-dark">
-							Artificial Intelligence (AI) and Machine Learning (ML) projects have gained immense importance in
-							various fields due to their transformative potential. AI/ML projects have far-reaching implications
-							across industries, driving innovation, efficiency, and improved decision-making. They are poised to
-							revolutionize how businesses operate, how healthcare is delivered, how products are developed, and
-							how society addresses complex challenges. As a result, AI/ML projects are not only important but
-							also transformative in nature.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							CUSTOM GIFT LOYALTY PROGRAMS
-						</h5>
-						<p class="text-dark">
-							A custom gift loyalty program can help you retain customers, increase sales, foster brand loyalty,
-							and collect valuable customer data. It's a powerful tool for enhancing customer relationships and
-							driving business success. A custom gift loyalty program is a strategic marketing initiative that
-							can bring numerous benefits to a business.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							DOCUMENT SECURITY
-						</h5>
-						<p class="text-dark">
-							Document security is of paramount importance in today's digital age, where information is a
-							valuable asset that needs to be protected from various threats. Document security is integral to
-							protecting sensitive information, complying with regulations, preventing data breaches, and
-							maintaining trust with customers and partners. It is an essential aspect of modern business
-							operations and is critical for safeguarding confidential data in an increasingly digital and
-							interconnected world.
-						</p>
-					</div>
-
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							CHAT BOTS
-						</h5>
-						<p class="text-dark">
-							Chatbots have gained significant importance in various industries and sectors due to their ability
-							to streamline processes, improve customer experiences, and provide cost-effective solutions.
-							Chatbots are versatile tools that offer numerous advantages across industries, including improved
-							customer service, cost savings, data-driven insights, and enhanced user experiences. They have
-							become an essential component of modern business operations, helping organizations efficiently
-							engage with customers, automate tasks, and drive productivity.
-						</p>
-					</div>
-
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							HRMS
-						</h5>
-						<p class="text-dark">
-							A Human Resource Management System (HRMS) is a software application that combines various human
-							resource functions and processes into a single integrated system. HRMS is a fundamental tool for
-							managing the human resources function within an organization. It not only improves efficiency and
-							data accuracy but also enables strategic HR management by providing insights and tools for talent
-							development, compliance, and employee engagement. As organizations continue to evolve, the
-							importance of HRMS systems in driving success and competitiveness is likely to grow.
-						</p>
-					</div>
-
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							TECHNOLOGY CONSULTING
-						</h5>
-						<p class="text-dark">
-							Technology consulting plays a crucial role in today's rapidly evolving digital landscape.
-							Technology consultants offer expertise, guidance, and strategies to maximize the value of
-							technology investments and drive organizational success. Technology consulting is essential for
-							businesses to navigate the complexities of the digital age, remain competitive, and make informed
-							technology-related decisions.
-						</p>
-					</div>
-
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							ECOMMERCE DEVELOPMENT
-						</h5>
-						<p class="text-dark">
-							E-commerce development is of paramount importance in the modern business landscape, as it enables
-							organizations to tap into the vast potential of online commerce. It offers numerous advantages,
-							including global reach, cost efficiency, personalized experiences, and data-driven insights, all of
-							which contribute to increased competitiveness and profitability.
-						</p>
-					</div>
-
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							ANALYTICS DASHBOARD
-						</h5>
-						<p class="text-dark text-p">
-							Analytics dashboards play a vital role in modern businesses and organizations by providing
-							real-time data visualization and insights. Analytics dashboards are essential tools for
-							organizations looking to leverage data for better decision-making, improved efficiency, and
-							strategic growth. They enable businesses to stay agile, competitive, and responsive to evolving
-							market conditions.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="pb-0 pt-5 position-relative" id="contact">
-			<div class="container">
-				<div class="row justify-content-between">
-					<div class="col-xl-5 col-lg-6 my-lg-auto">
-						<h2 class="text-navyblue display-2 lh-1" style="font-weight: 700 !important;">Let's Connect</h2>
-						<p class="lead text-dark text-p">
-							Thank you for visiting our website. Please contact us using the form.
-						</p>
-					</div>
-					<div class="col-md-6 mb-5 px-7">
-						<div class="card border-0 shadow rounded-4 bg-transparent">
-							<div class="card-body pt-5 pb-4">
-								<div class="">
-									<div class="row">
-										<div class="col-md-12">
-											<div class="mb-3 position-relative">
-												<input required="" id="name" name="name" type="text" class="form-control bg-light"
-													placeholder="Name*"><span class="focus-border"></span><small class="text-danger"
-													id="name-err"></small>
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="mb-3 position-relative">
-												<input required="" id="email" name="email" type="email"
-													class="form-control bg-light" placeholder="E-mail*"><span
-													class="focus-border"></span><small class="text-danger" id="email-err"></small>
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="mb-3 position-relative">
-												<input required="" id="number" name="number" type="text"
-													class="form-control bg-light" placeholder="Phone*">
-												<span class="focus-border"></span><small class="text-danger"
-													id="number-err"></small>
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="mb-3 position-relative">
-												<input required="" id="service" name="service" type="text"
-													class="form-control bg-light" placeholder="Service*">
-												<span class="focus-border"></span>
-												<small class="text-danger" id="service-err"></small>
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="mb-3 position-relative">
-												<textarea id="message" name="message" cols="40" rows="3"
-													class="form-control bg-light" placeholder="Message"></textarea>
-												<span class="focus-border"></span>
-											</div>
-										</div>
-										<div class="col-md-12 text-end">
-											<button class="btn btn-primary px-5 w-100" type="submit" name="submit"
-												id="submit">Submit</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="pt-5 pb-4 position-relative d-none">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="display-8 text-navyblue mb-5">
-							OUR SERVICES
-						</h2>
-						<!-- <p class="mb-5 text-dark">
-								Company registration and licensing are critical processes for any business. They bring legal recognition, protection, and the ability to operate within a structured framework. Company registration establishes the legal identity of a business entity. company registration and licensing are essential steps in establishing a legitimate, credible, and compliant business entity. They offer legal protection, facilitate business operations, and open doors to opportunities for growth, funding, and expansion.
-							</p> -->
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							LEGAL REPRESENTATIVE & VISA SERVICES
-						</h5>
-						<p class="text-dark">
-							Legal representative and visa services are invaluable for individuals and businesses dealing with
-							immigration or international legal matters. They provide guidance, expertise, and support, ensuring
-							that applicants meet legal requirements, navigate complex processes, and achieve successful
-							outcomes while minimizing risks and hassles.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							PRO SERVICES
-						</h5>
-						<p class="text-dark">
-							PRO services are invaluable in various sectors and industries, providing expertise, solutions, and
-							support that contribute to the success and growth of individuals, businesses, and organizations.
-							They offer a wide range of benefits, from improving efficiency and productivity to mitigating risks
-							and enhancing the quality of work and decision-making.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							BANKING ASSISTANCE
-						</h5>
-						<p class="text-dark">
-							Banking assistance is essential for the functioning of modern economies and the financial
-							well-being of individuals and businesses. Banks provide financial services, security, access to
-							credit, and support for economic growth, making them fundamental institutions in today's world.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							RECRUIMENT
-						</h5>
-						<p class="text-dark">
-							Recruitment is a cornerstone of human resource management and organizational success. It directly
-							impacts talent acquisition, workforce diversity, employee engagement, and the ability to innovate
-							and grow. Effective recruitment strategies are essential for achieving a competitive advantage and
-							positioning organizations for long-term success.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							ADVERTISING & MARKETING
-						</h5>
-						<p class="text-dark">
-							Advertising and marketing are indispensable for businesses looking to thrive and succeed in
-							competitive markets. They drive brand awareness, customer acquisition, revenue, and loyalty while
-							providing valuable insights into market dynamics and consumer behaviour. Effective marketing
-							strategies are a cornerstone of business success in the modern world.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							TAX CONSULTING & ACCOUNTING
-						</h5>
-						<p class="text-dark">
-							Tax consulting and accounting services are essential for individuals and businesses to ensure
-							financial compliance, optimize tax liabilities, make informed financial decisions, and achieve
-							long-term financial goals. They play a fundamental role in financial management and the overall
-							success of individuals and organizations.
-						</p>
-					</div>
-					<div class="col-sm-4 mb-5">
-						<h5 class="text-navyblue">
-							TRADEMARK
-						</h5>
-						<p class="text-dark">
-							Trademarks are integral to brand recognition, protection, and success in today's competitive
-							marketplace. They offer legal protection, build consumer trust, and can be a valuable asset with
-							long-term financial implications for businesses and individuals alike.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-	</main>
-	<!-- MAIN CONTENT END -->
-
-	<footer class="bg-transparent shadow">
-		<div class="container">
-			<div class="row align-items-center justify-content-md-between py-4">
-				<div class="col-md-6">
-					<div class="text-center text-md-start">©2023 <a href="https://www.sazgenix.com/" class="text-navyblue"
-							target="_blank">SAZGENIX</a>. All rights reserved
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="d-flex align-items-center justify-content-end">
-						<ul class="list-unstyled d-flex">
-							<li>
-								<a class="text-navyblue text-skyblue-hover px-2" href="#">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-							</li>
-							<li>
-								<a class="text-navyblue text-skyblue-hover px-2" href="#">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a class="text-navyblue text-skyblue-hover px-2" href="#">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a class="text-navyblue text-skyblue-hover ps-2" href="#">
-									<i class="fab fa-youtube"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+      </div>
 
 
 
-	<script src="assets/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/jarallax.min.js"></script>
-	<script src="assets/js/jarallax-video.min.js"></script>
-	<script src="assets/js/tiny-slider.js"></script>
-	<script src="assets/js/sticky.min.js"></script>
-	<script src="assets/js/aos.js"></script>
-	<script src="assets/js/functions.js"></script>
+
+
+
+
+    </div>
+    <nav style="padding-top: 5px; padding-bottom: 5px;" class="navbar navbar-expand-lg"><a href="index.html"
+        class="navbar-brand"><img src="img/sazgenixLogo.jpg" height="40" alt=""></a>
+      <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler-right"><span></span><span></span><span></span></button>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto align-items-start align-items-lg-center">
+          <li class="nav-item"><a style="font-family: 'poppins';" href="#about-us" class="nav-link link-scroll">About Us</a></li>
+          <li class="nav-item"><a style="font-family: 'poppins';" href="#services" class="nav-link link-scroll">Our Services</a></li>
+          <li class="nav-item"><a style="font-family: 'poppins';" href="#what-we-offer" class="nav-link link-scroll">What We Offer</a></li>
+          <li class="nav-item"><a  href="#contact"
+              style="background-color: #001a33; color:white; border-radius: 10px; padding: 10px; font-size: 15px;"
+              class="nav-link link-scroll">Contact Us</a></li>
+
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+
+  <!--hero section  -->
+  <section id="hero" class="hero hero-home">
+    <video autoplay loop muted playsinline class="video-background">
+      <source src="img/hero video.mov" type="video/mp4">
+    </video>
+    <div class="container d-flex justify-content-center align-items-center text-center"
+      style="flex-direction: column; padding-top: 80px;">
+      <h1 class="phone-size">YOUR PARTNER FOR STREAMLINED BACKEND OPERATIONS</h1>
+      <p class="hero-text" style="color: white; width: 80%; font-family: 'poppins'; font-weight:300; ">Powering Progress
+        through Advanced Technology: Your Collaborative Partner for Streamlined Backend Operations and Innovation</p>
+      <div class="CTA">
+        <a style="background-color: #001a33; color:white; font-family: 'poppins';" href="#services"
+          class="btn btn-primary btn-shadow link-scroll">Discover More</a>
+      </div>
+      <!-- <div class="row d-flex justify-content-center align-items-center" style="border: 2px solid green;">
+        <div class=" col-lg-6 text order-2 order-lg-1 text-center" style="border: 2px solid red; width: 90%;">
+          <h1 style="color: white; width: 80%; border: 2px solid red;" >Your Partner for Streamlined Backend Operations</h1>
+          <p class="hero-text" style="color: white;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+          <div class="CTA">
+            <a style="background-color: #001a33; color:white;" href="#features" class="btn btn-primary btn-shadow link-scroll">Discover More</a>
+          </div>
+        </div> -->
+      <!-- <div class="col-lg-6 order-1 order-lg-2 cutom-hero">
+         
+          
+        </div> -->
+    </div>
+    </div>
+  </section>
+
+
+
+  <!-- hero section ends -->
+  <div id="scrollTop">
+    <div class="d-flex align-items-center justify-content-end"><i class="fa fa-long-arrow-up"></i>To Top</div>
+  </div>
+
+
+  <!-- About us -->
+  <section id="about-us" style="padding-top: 100px; background-color: #ffffff;  color: rgb(0, 0, 0);"
+    class="about-us bg-gray">
+    <div class="container">
+      <h2 style="color: rgb(0, 0, 0); font-family: 'lemon-medium';" data-aos="fade-up ">About Us</h2>
+      <div class="row">
+        <p class="lead col-lg-6 pb-5" data-aos="fade-up" style="font-family: 'poppins';">At Sazgenix, we're not just a service provider, we're your
+          partners in achieving operational excellence. With a team of seasoned professionals, we're committed to
+          revolutionizing the way
+          businesses handle backend tasks, client interactions, and customer service. Our mission is to empower you to
+          focus on what truly matters while we handle the intricacies behind the scenes. </p>
+
+
+        <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column"
+          style="padding-left: 15px; gap: 20px;">
+
+
+          <div data-aos="fade-left" style="gap: 20px;" class="d-flex justify-content-center align-items-center">
+
+            <iconify-icon icon="carbon:sustainability" style="color:#001a33;" width="50" height="50"></iconify-icon>
+            <div class="heading-subheading d-flex flex-column ">
+              <span style="font-family: 'lemon-medium'; font-weight: bold; font-size: 20px;">Sustainability</span>
+              <span style="font-family: 'poppins';">Driving sustainable economic growth through technology, fostering innovation, and aligning practices
+                with overarching business objectives.</span>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" style="gap: 20px;" class="d-flex justify-content-center align-items-center">
+
+            <iconify-icon icon="ic:twotone-diversity-3" style="color:#001a33;" width="50" height="50"></iconify-icon>
+            <div class="heading-subheading d-flex flex-column ">
+              <span style="font-family:'lemon-medium'; font-weight: bold; font-size: 20px;">Diversity & Inclusion</span>
+              <span style="font-family:'poppins'">Sazgenix thrives on diversity, fostering innovation, empowering all, and shaping a future with
+                inclusive values.</span>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" style="gap: 20px;" class="d-flex justify-content-center align-items-center">
+
+            <iconify-icon icon="mingcute:eye-fill" style="color:#001a33;" width="50" height="50"></iconify-icon>
+            <div class="heading-subheading d-flex flex-column ">
+              <span style="font-family:'lemon-medium'; font-weight: bold; font-size: 20px;">Vision</span>
+              <span style="font-family:'poppins'">Leading in Business and IT through cutting-edge education, innovative technology solutions,
+                exceptional service, and adaptability culture.</span>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" style="gap: 20px;" class="d-flex justify-content-center align-items-center">
+
+            <iconify-icon icon="fluent-mdl2:build-definition" style="color:#001a33;" width="50"
+              height="50"></iconify-icon>
+            <div class="heading-subheading d-flex flex-column ">
+              <span style="font-family:'lemon-medium'; font-weight: bold; font-size: 20px;">Innovation</span>
+              <span>Unlocking dreams, shaping futures—empowering you for a brighter tomorrow through our dedicated
+                efforts and commitment.</span>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" style="gap: 20px;" class="d-flex justify-content-center align-items-center">
+
+            <iconify-icon icon="mdi:head-thinking-outline" style="color:#001a33;" width="50" height="50"></iconify-icon>
+            <div class="heading-subheading d-flex flex-column ">
+              <span style="font-family:'lemon-medium'; font-weight: bold; font-size: 20px;">Optimism</span>
+              <span style="font-family:'poppins'">Resilient vision: overcoming challenges with determination, innovation, collaboration; setbacks are
+                opportunities; optimism fuels progress for positive change.</span>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+  </section>
+  <!-- About us Ends here -->
+
+
+  <!-- Our Services -->
+  <section id="services" class="features">
+    <div class="container">
+      <header>
+        <h2 claas="text-center" style="font-family: 'lemon-medium';">Our Services</h2>
+      </header>
+
+      <div class="row d-flex align-items-center">
+        <div class="text col-lg-6 order-2 order-lg-1">
+          <!-- <div class="icon"><iconify-icon icon="ant-design:solution-outlined" style="color: #001a33;"  width="80" height="80"></iconify-icon></div> -->
+          <h4 style="color: black; font-family:'lemon-medium';" data-aos="fade-up">Business Solutions</h4>
+          <p style="font-family: 'poppins';" data-aos="fade-up">At Sazgenix, we're all about making your study abroad journey a breeze! From Diplomas to
+            Doctorates, our seasoned counselors understand your dreams and guide you every step. As members of global
+            bodies, we're VISA experts, ensuring success. Plus, we've got your back with backend support for smooth
+            operations. Let's make your education dreams a reality!</p>
+        </div>
+        <div class="image col-lg-6 order-1 order-lg-2"><img style="border-radius: 10px;" data-aos="fade-left"
+            src="img/feature-1.jpg" alt="..." class="img-fluid"></div>
+      </div>
+
+      <div class="row d-flex align-items-center">
+        <div class="image col-lg-6"><img data-aos="fade-right" style="border-radius: 10px;" src="img/feature-2.jpg"
+            alt="..." class="img-fluid"></div>
+        <div class="text col-lg-6">
+          <!-- <div class="icon"><iconify-icon icon="mdi:handshake-outline" style="color: #001a33;"  width="80" height="80"></iconify-icon></div> -->
+          <h4 style="color: black; font-family:'lemon-medium';" data-aos="fade-up">IT Solutions</h4>
+          <p style="font-family: 'poppins';" data-aos="fade-up">At our IT hub, we believe in customized excellence. From robust cybersecurity to
+            seamless automation, our tailored solutions align with your unique needs. Embracing the latest in AI,
+            machine learning, blockchain, cloud computing, and IoT, we keep you ahead. Our focus on harmonious
+            integration guarantees minimal disruption and maximized efficiency, ensuring you're always at the forefront
+            of technology.</p>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center">
+        <div class="text col-lg-6 order-2 order-lg-1">
+          <!-- <div class="icon"><iconify-icon icon="ant-design:solution-outlined" style="color: #001a33;"  width="80" height="80"></iconify-icon></div> -->
+          <h4 style="color: black; font-family:'lemon-medium';" data-aos="fade-up">Cyber Security</h4>
+          <p style="font-family: 'poppins';" data-aos="fade-up">In the dynamic landscape of cyber threats, we stay a step ahead. Our cybersecurity
+            arsenal boasts cutting-edge tech and a vigilant expert team. Proactive and 24/7, we shield your systems with
+            advanced threat intelligence, anticipating and neutralizing threats before breach. Stay empowered with our
+            in-depth analysis, always one step ahead of cyber adversaries.</p>
+        </div>
+        <div class="image col-lg-6 order-1 order-lg-2"><img style="border-radius: 10px;" data-aos="fade-left"
+            src="img/feature-1.jpg" alt="..." class="img-fluid"></div>
+      </div>
+      <!-- 
+
+
+
+ -->
+    </div>
+  </section>
+  <!-- Our Services ends here -->
+
+
+  <section id="what-we-offer" style="background-color: #001a33; color: white;">
+    <header class="text-center">
+      <h2 style="color: white; font-family: 'lemon-medium';">What We Offer</h2>
+      <div class="row">
+        <p class="lead col-lg-8 mx-auto" style="font-family: 'poppins';">Revolutionize your business with strategic consulting, cutting-edge IT
+          solutions, and robust cybersecurity services for growth, efficiency, and digital resilience in today's
+          landscape.</p>
+      </div>
+    </header>
+    <ul class="filterList">
+      <li style="font-family: 'lemon-medium';" class="list active" data-filter="item1">Business Solutions</li>
+      <li style="font-family: 'lemon-medium';" class="list" data-filter="item2">IT Solutions</li>
+      <li style="font-family: 'lemon-medium';" class="list" data-filter="item3">Cyber Security</li>
+    </ul>
+
+
+    <div class="products">
+      <!-- Business Solutions -->
+      <div class="item item1">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="zondicons:education" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium'; text-align: center;">Education Consulting</h3>
+        </div>
+      </div>
+      <div class="item item1">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="fluent-mdl2:air-tickets" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Visa Processing</h3>
+        </div>
+      </div>
+      <div class="item item1">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="mdi:college" style="color: rgb(255, 255, 255);" width="80" height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Admission</h3>
+        </div>
+      </div>
+      <div class="item item1">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="ic:baseline-people" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Staffing</h3>
+        </div>
+      </div>
+      <div class="item item1">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="fluent-mdl2:recruitment-management" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Recruitment</h3>
+        </div>
+      </div>
+      <div class="item item1">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="mdi:human-queue" style="color: rgb(255, 255, 255);" width="80" height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">HRMS</h3>
+        </div>
+      </div>
+      <div class="item item1">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="mdi:account-key" style="color: rgb(255, 255, 255);" width="80" height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Taxation/Accounting</h3>
+        </div>
+      </div>
+      <div class="item item1">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="streamline:graph" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Sales Coordinators</h3>
+        </div>
+      </div>
+      <div class="item item1">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="carbon:sales-ops" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Client Retention</h3>
+        </div>
+      </div>
+      <div class="item item1">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="carbon:operations-record" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Operations</h3>
+        </div>
+      </div>
+      <!-- Business Solutions Ends -->
+
+
+
+
+      <!-- IT solutions -->
+      <div class="item item2">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="streamline:web-solid" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Web Development</h3>
+        </div>
+      </div>
+      <div class="item item2">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="material-symbols:web-traffic" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Web Designing</h3>
+        </div>
+      </div>
+      <div class="item item2">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="material-symbols:inbox-customize" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium'; text-align: center">Product Customisation</h3>
+        </div>
+      </div>
+      <div class="item item2">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="icon-park-twotone:market-analysis" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Digital Marketing</h3>
+        </div>
+      </div>
+      <div class="item item2">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="icon-park-outline:seo" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">SEO</h3>
+        </div>
+      </div>
+
+      <div class="item item2">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="fa:mobile" style="color: rgb(255, 255, 255);" width="80" height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">App Development</h3>
+        </div>
+      </div>
+      <!-- <div class="item item2">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon  icon="carbon:operations-record" style=" color: rgb(0, 0, 0);" width="80" height="80"></iconify-icon>
+          <h3 class="h5" style="color: black;">FullStack Development</h3>
+        </div>
+      </div> -->
+
+
+      <!-- IT solutions Ends-->
+      <div class="item item3">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="grommet-icons:vulnerability" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Vulnerability Checks</h3>
+        </div>
+      </div>
+
+      <div class="item item3">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="map:sheild" style="color: rgb(255, 255, 255);" width="80" height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">24/7 Threat Defense</h3>
+        </div>
+      </div>
+
+      <div class="item item3">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="healthicons:i-training-class" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">User Training</h3>
+        </div>
+      </div>
+      <div class="item item3">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="fluent-mdl2:feedback-response-solid" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium'; text-align: center">Rapid Incident Response</h3>
+        </div>
+      </div>
+      <div class="item item3">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="streamline:user-protection-2-solid" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Device Protection</h3>
+        </div>
+      </div>
+      <div class="item item3">
+        <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
+          <iconify-icon icon="fluent-mdl2:compliance-audit" style="color: rgb(255, 255, 255);" width="80"
+            height="80"></iconify-icon>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium';">Compliance Audits</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Features start here -->
+
+
+  <!-- Features will go here if needed 
+      The HTML code is available in features.html in the root direcotry
+-->
+
+
+  <!-- Features end -->
+
+
+  <!-- Testimonials Start Here 
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <header class="text-center no-margin-bottom">   
+          <h2>Happy Clients</h2>
+          <p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+        </header>
+        <div class="owl-carousel owl-theme testimonials-slider"> 
+          <div class="item-holder">
+            <div class="item">
+              <div class="avatar"><img src="img/avatar-3.jpg" alt="..." class="img-fluid"></div>
+              <div class="text">
+                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p><strong class="name">Jessica Watson</strong>
+              </div>
+            </div>
+          </div>
+          <div class="item-holder">
+            <div class="item">
+              <div class="avatar"><img src="img/avatar-5.jpg" alt="..." class="img-fluid"></div>
+              <div class="text">
+                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p><strong class="name">Sarrah Wood</strong>
+              </div>
+            </div>
+          </div>
+          <div class="item-holder">
+            <div class="item">
+              <div class="avatar"><img src="img/avatar-3.jpg" alt="..." class="img-fluid"></div>
+              <div class="text">
+                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p><strong class="name">Jessica Watson</strong>
+              </div>
+            </div>
+          </div>
+          <div class="item-holder">
+            <div class="item">
+              <div class="avatar"><img src="img/avatar-5.jpg" alt="..." class="img-fluid"></div>
+              <div class="text">
+                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p><strong class="name">Sarrah Wood</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    Testimonials End here -->
+
+
+
+
+
+
+
+  <!-- CONTACT SECTION -->
+  <section style="padding-left: 10%; padding-right: 10%;" id="contact" class="text-center">
+    <h3 class="mb-5" style="font-family: 'lemon-medium';">Get In Touch With Us</h3>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13212.147013411655!2d74.8125996!3d34.1198088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e185002b3e4d47%3A0x44751d169f5a6976!2sSazgenix%20IT%20Solutions!5e0!3m2!1sen!2sin!4v1703239447834!5m2!1sen!2sin"
+            loading="lazy" class="h-100 w-100" style="border:5px;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+
+        <div class="col-lg-7">
+          <div class="screen">
+            <div class="screen-header">
+              &nbsp;
+            </div>
+            <div class="screen-body">
+
+              <div class="screen-body-item">
+
+                <div class="app-form">
+
+                  <form action="https://formspree.io/f/xjvnbnqv" method="POST">
+                    <div class="app-form-group">
+                      <input class="app-form-control" name="name" placeholder="NAME" required>
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" name="email" placeholder="EMAIL" required>
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" name="contact" placeholder="CONTACT NO" required>
+                    </div>
+
+                    <div class="app-form-group message">
+                      <input class="app-form-control" name="message" placeholder="MESSAGE" required>
+                    </div>
+                    <div class="app-form-group buttons">
+                      <button class="app-form-button"> <strong>SEND</strong></button>
+                    </div>
+                  </form>
+
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END CONTACT SECTION -->
+
+
+
+
+
+
+
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <iconify-icon icon="ion:call-sharp" style="color: rgb(255, 255, 255);" width="40"
+                height="40"></iconify-icon>
+              <div class="cta-text">
+                <h4 style="font-family: 'lemon-medium';">Call us</h4>
+                <span>+91 7006857402</span>
+                <span>| +91 1943100051</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <iconify-icon icon="material-symbols:mail" style="color: rgb(255, 255, 255);" width="40"
+                height="40"></iconify-icon>
+              <div class="cta-text">
+                <h4 style="font-family: 'lemon-medium';">Mail us</h4>
+                <span>info@sazgenix.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="index.html"><img src="img/footer-logo-white.png" class="img-fluid" alt="logo"></a>
+              </div>
+              <div class="footer-text">
+                <p style="font-family: 'poppins';">
+                  Sazgenix is a forward-thinking company dedicated to revolutionizing education and technology,
+                  providing secure and innovative IT solutions.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3 style="font-family: 'lemon-medium';">Useful Links</h3>
+              </div>
+              <ul>
+                <li><a style="font-family: 'poppins';" href="index.html" class="nav-link link-scroll">Home</a></li>
+                <li><a style="font-family: 'poppins';" href="#about-us" class="nav-link link-scroll">About</a></li>
+                <li><a style="font-family: 'poppins';" href="#services" class="nav-link link-scroll">Our Services</a></li>
+                <li><a style="font-family: 'poppins';" href="#what-we-offer" class="nav-link link-scroll">What We Offer</a></li>
+                <li><a style="font-family: 'poppins';" href="#contact" class="nav-link link-scroll">Contact Us</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-text mb-25">
+                <div class="footer-social-icon">
+                  <span style="font-family: 'lemon-medium';">Follow us</span>
+                  <a href="https://www.facebook.com/people/Sazgenix-It-Solutions/61551862898595/"><iconify-icon
+                      icon="ic:baseline-facebook" width="40" height="40"></iconify-icon></a>
+                  <a href="https://www.instagram.com/sazgenix_official/"><iconify-icon icon="mdi:instagram" width="40"
+                      height="40"></iconify-icon></a>
+                  <a href="https://www.youtube.com/@SAZGENIX"><iconify-icon icon="mdi:youtube" width="40"
+                      height="40"></iconify-icon></a>
+                  <a href="https://www.linkedin.com/company/sazgenix/"><iconify-icon icon="mdi:linkedin" width="40"
+                      height="40"></iconify-icon></a>
+                  <a href="https://twitter.com/sazgenix"><iconify-icon icon="akar-icons:twitter-fill" width="40"
+                      height="40"></iconify-icon></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row text-center">
+          <div class="copyright-text">
+            <p style="font-family: 'poppins';">Copyright &copy; 2023, All Right Reserved SAZGENIX.COM</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Javascript files-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"> </script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="js/front.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
+    <!-- JavaScript -->
+
+    $(document).ready(function () {
+      $(".list").click(function () {
+        const dataValue = $(this).attr("data-filter");
+        if (dataValue == "all-items") {
+          $(".item").show();
+        } else {
+          $(".item").hide();
+          $(".item." + dataValue).show();
+        }
+
+        // Set 'active' class to the clicked list item
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    });
+
+
+    AOS.init();
+  </script>
 </body>
 
 </html>
