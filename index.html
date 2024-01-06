@@ -8,44 +8,18 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
-  <!-- Bootstrap CSS-->
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-  <!-- Font Awesome CSS-->
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-  <!-- Custom Font Icons CSS-->
-  <link rel="stylesheet" href="css/landy-iconfont.css">
-  <!-- Google fonts - Open Sans-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
-  <!-- owl carousel-->
-  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
-  <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
-  <!-- theme stylesheet-->
   <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-  <!-- Custom stylesheet - for your changes-->
-  <link rel="stylesheet" href="css/custom.css">
-  <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link
-    href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-    rel="stylesheet" />
-
   <link
     href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
     rel="stylesheet" />
   <style>
-    /* .cutom-hero {
-      background-image: url("img/heroimage.jpg");
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      color: white;
-      padding: 20px;
-      height: 100vh;
-      padding-top: 200px;
-    } */
-
-    html{
+    html {
       overflow-x: hidden;
     }
 
@@ -99,13 +73,23 @@
       font-family: 'lemon-medium';
       font-weight: normal;
       font-size: 60px;
-      
+
 
     }
 
     @media(max-width: 520px) {
       .numbers {
         font-size: 10px;
+      }
+
+      .phone-size {
+        font-size: 50px;
+      }
+    }
+
+    @media(max-width: 394px) {
+      .numbers {
+        font-size: 8px;
       }
 
       .phone-size {
@@ -122,76 +106,79 @@
     -->
 
   <header id="top-bar" class="header">
-    <div
-      style="display: flex; align-items: center; justify-content: space-between; background-color: white; padding-left: 3%; padding-right: 3%; background-image: linear-gradient(to right, #001a33 , #0066cc, #001a33);"
-      class="top-bar">
+    <div class="top-bar">
 
 
-      <div class="numbers" style="display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-left: 5px;
-            ">
+      <div class="numbers">
 
-        <span style="color:#001a33; display: flex; align-items: center; gap: 10px;"><iconify-icon
-            icon="ri:customer-service-fill" style="color: white;" width="14" height="14"></iconify-icon> <span> <a
-              class="numbers" href="tel:+91 7006857402"
-              style="font-weight: normal; text-decoration: none; color: white">+91-7006857402</a>
-          </span></span>
+        <span class="top-bar-numbers-holder">
+          
+          <iconify-icon icon="ri:customer-service-fill" style="color: white;"
+            width="14" height="14"></iconify-icon>
+          
+            <span> <a class="numbers" href="tel:+91 7006857402">+91-7006857402</a>
+          </span>
+        
+        </span>
 
-        <span style="color:#001a33; display: flex; align-items: center; gap: 10px;"><iconify-icon
+        <span class="top-bar-numbers-holder"><iconify-icon
             style="padding-left:15px; color: white;" icon="ri:customer-service-fill" width="14"
-            height="14"></iconify-icon> <span> <a class="numbers" href="tel:+91 1943100051"
-              style=" font-weight: normal; text-decoration: none; color: white;">+91-1943100051</a>
+            height="14"></iconify-icon> 
+            
+            <span> 
+              <a class="numbers" href="tel:+91 1943100051">+91-1943100051</a>
           </span></span>
 
       </div>
 
 
-      <div class="social-media-icons" style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              gap: 10px;
-              ">
+      <div class="social-media-icons">
 
-        <a style="color:white; padding-top: 5px;" href="https://www.instagram.com/sazgenix_official/"
-          target="_blank"><iconify-icon icon="mdi:instagram" width="20" height="20"></iconify-icon></a>
+        <a class="social-media-icons-links" href="https://www.instagram.com/sazgenix_official/" target="_blank">
+          <iconify-icon icon="mdi:instagram" width="20" height="20"></iconify-icon>
+        </a>
 
-        <a style="color:white; padding-top: 5px;" href="https://www.youtube.com/@SAZGENIX" target="_blank"><iconify-icon
-            icon="mdi:youtube" width="20" height="20"></iconify-icon></a>
+        <a class="social-media-icons-links" href="https://www.youtube.com/@SAZGENIX" target="_blank">
+          <iconify-icon icon="mdi:youtube" width="20" height="20"></iconify-icon>
+        </a>
 
-        <a style="color:white; padding-top: 5px;" href="https://www.linkedin.com/company/sazgenix/"
-          target="_blank"><iconify-icon icon="mdi:linkedin" width="20" height="20"></iconify-icon></a>
+        <a class="social-media-icons-links" href="https://www.linkedin.com/company/sazgenix/" target="_blank">
+          <iconify-icon icon="mdi:linkedin" width="20" height="20"></iconify-icon>
+        </a>
 
-        <a style="color:white; padding-top: 5px;"
-          href="https://www.facebook.com/people/Sazgenix-It-Solutions/61551862898595/" target="_blank"><iconify-icon
-            icon="ic:baseline-facebook" width="20" height="20"></iconify-icon></a>
-        <a style="color:white; padding-top: 5px;" href="https://twitter.com/sazgenix" target="_blank"><iconify-icon
-            icon="mdi:twitter" width="20" height="20"></iconify-icon></a>
+        <a class="social-media-icons-links" href="https://www.facebook.com/people/Sazgenix-It-Solutions/61551862898595/" target="_blank">
+          <iconify-icon icon="ic:baseline-facebook" width="20" height="20"></iconify-icon>
+        </a>
+        
+        <a class="social-media-icons-links" href="https://twitter.com/sazgenix" target="_blank">
+          <iconify-icon icon="mdi:twitter" width="20" height="20"></iconify-icon>
+        </a>
 
 
       </div>
-
-
-
-
-
-
-
     </div>
-    <nav style="padding-top: 5px; padding-bottom: 5px;" class="navbar navbar-expand-lg"><a href="index.html"
+
+
+
+
+    <nav class="navbar navbar-expand-lg"><a href="index.html"
         class="navbar-brand"><img src="img/sazgenixLogo.jpg" height="40" alt=""></a>
+
       <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
         class="navbar-toggler navbar-toggler-right"><span></span><span></span><span></span></button>
-      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+
         <ul class="navbar-nav ml-auto align-items-start align-items-lg-center">
-          <li class="nav-item"><a style="font-family: 'poppins';" href="#about-us" class="nav-link link-scroll">About Us</a></li>
-          <li class="nav-item"><a style="font-family: 'poppins';" href="#services" class="nav-link link-scroll">Our Services</a></li>
-          <li class="nav-item"><a style="font-family: 'poppins';" href="#what-we-offer" class="nav-link link-scroll">What We Offer</a></li>
-          <li class="nav-item"><a  href="#contact"
-              style="background-color: #001a33; color:white; border-radius: 10px; padding: 10px; font-size: 15px;"
+          <li class="nav-item"><a href="#about-us" class="nav-link link-scroll">About
+              Us</a></li>
+          <li class="nav-item"><a style="font-family: 'poppins';" href="#services" class="nav-link link-scroll">Our
+              Services</a></li>
+          <li class="nav-item"><a style="font-family: 'poppins';" href="#what-we-offer"
+              class="nav-link link-scroll">What We Offer</a></li>
+          <li class="nav-item"><a href="#contact"
+              style="background-color: #001a33; color:white; border-radius: 10px; padding: 10px 20px; font-size: 15px;"
               class="nav-link link-scroll">Contact Us</a></li>
 
         </ul>
@@ -245,7 +232,8 @@
     <div class="container">
       <h2 style="color: rgb(0, 0, 0); font-family: 'lemon-medium';" data-aos="fade-up ">About Us</h2>
       <div class="row">
-        <p class="lead col-lg-6 pb-5" data-aos="fade-up" style="font-family: 'poppins';">At Sazgenix, we're not just a service provider, we're your
+        <p class="lead col-lg-6 pb-5" data-aos="fade-up" style="font-family: 'poppins';">At Sazgenix, we're not just a
+          service provider, we're your
           partners in achieving operational excellence. With a team of seasoned professionals, we're committed to
           revolutionizing the way
           businesses handle backend tasks, client interactions, and customer service. Our mission is to empower you to
@@ -261,7 +249,8 @@
             <iconify-icon icon="carbon:sustainability" style="color:#001a33;" width="50" height="50"></iconify-icon>
             <div class="heading-subheading d-flex flex-column ">
               <span style="font-family: 'lemon-medium'; font-weight: bold; font-size: 20px;">Sustainability</span>
-              <span style="font-family: 'poppins';">Driving sustainable economic growth through technology, fostering innovation, and aligning practices
+              <span style="font-family: 'poppins';">Driving sustainable economic growth through technology, fostering
+                innovation, and aligning practices
                 with overarching business objectives.</span>
             </div>
           </div>
@@ -271,7 +260,8 @@
             <iconify-icon icon="ic:twotone-diversity-3" style="color:#001a33;" width="50" height="50"></iconify-icon>
             <div class="heading-subheading d-flex flex-column ">
               <span style="font-family:'lemon-medium'; font-weight: bold; font-size: 20px;">Diversity & Inclusion</span>
-              <span style="font-family:'poppins'">Sazgenix thrives on diversity, fostering innovation, empowering all, and shaping a future with
+              <span style="font-family:'poppins'">Sazgenix thrives on diversity, fostering innovation, empowering all,
+                and shaping a future with
                 inclusive values.</span>
             </div>
           </div>
@@ -281,7 +271,8 @@
             <iconify-icon icon="mingcute:eye-fill" style="color:#001a33;" width="50" height="50"></iconify-icon>
             <div class="heading-subheading d-flex flex-column ">
               <span style="font-family:'lemon-medium'; font-weight: bold; font-size: 20px;">Vision</span>
-              <span style="font-family:'poppins'">Leading in Business and IT through cutting-edge education, innovative technology solutions,
+              <span style="font-family:'poppins'">Leading in Business and IT through cutting-edge education, innovative
+                technology solutions,
                 exceptional service, and adaptability culture.</span>
             </div>
           </div>
@@ -302,7 +293,8 @@
             <iconify-icon icon="mdi:head-thinking-outline" style="color:#001a33;" width="50" height="50"></iconify-icon>
             <div class="heading-subheading d-flex flex-column ">
               <span style="font-family:'lemon-medium'; font-weight: bold; font-size: 20px;">Optimism</span>
-              <span style="font-family:'poppins'">Resilient vision: overcoming challenges with determination, innovation, collaboration; setbacks are
+              <span style="font-family:'poppins'">Resilient vision: overcoming challenges with determination,
+                innovation, collaboration; setbacks are
                 opportunities; optimism fuels progress for positive change.</span>
             </div>
           </div>
@@ -331,7 +323,8 @@
         <div class="text col-lg-6 order-2 order-lg-1">
           <!-- <div class="icon"><iconify-icon icon="ant-design:solution-outlined" style="color: #001a33;"  width="80" height="80"></iconify-icon></div> -->
           <h4 style="color: black; font-family:'lemon-medium';" data-aos="fade-up">Business Solutions</h4>
-          <p style="font-family: 'poppins';" data-aos="fade-up">At Sazgenix, we're all about making your study abroad journey a breeze! From Diplomas to
+          <p style="font-family: 'poppins'; color: #000"  data-aos="fade-up">At Sazgenix, we're all about making your study abroad
+            journey a breeze! From Diplomas to
             Doctorates, our seasoned counselors understand your dreams and guide you every step. As members of global
             bodies, we're VISA experts, ensuring success. Plus, we've got your back with backend support for smooth
             operations. Let's make your education dreams a reality!</p>
@@ -346,7 +339,8 @@
         <div class="text col-lg-6">
           <!-- <div class="icon"><iconify-icon icon="mdi:handshake-outline" style="color: #001a33;"  width="80" height="80"></iconify-icon></div> -->
           <h4 style="color: black; font-family:'lemon-medium';" data-aos="fade-up">IT Solutions</h4>
-          <p style="font-family: 'poppins';" data-aos="fade-up">At our IT hub, we believe in customized excellence. From robust cybersecurity to
+          <p style="font-family: 'poppins'; color: #000" data-aos="fade-up">At our IT hub, we believe in customized excellence. From
+            robust cybersecurity to
             seamless automation, our tailored solutions align with your unique needs. Embracing the latest in AI,
             machine learning, blockchain, cloud computing, and IoT, we keep you ahead. Our focus on harmonious
             integration guarantees minimal disruption and maximized efficiency, ensuring you're always at the forefront
@@ -358,7 +352,8 @@
         <div class="text col-lg-6 order-2 order-lg-1">
           <!-- <div class="icon"><iconify-icon icon="ant-design:solution-outlined" style="color: #001a33;"  width="80" height="80"></iconify-icon></div> -->
           <h4 style="color: black; font-family:'lemon-medium';" data-aos="fade-up">Cyber Security</h4>
-          <p style="font-family: 'poppins';" data-aos="fade-up">In the dynamic landscape of cyber threats, we stay a step ahead. Our cybersecurity
+          <p style="font-family: 'poppins'; color: #000" data-aos="fade-up">In the dynamic landscape of cyber threats, we stay a
+            step ahead. Our cybersecurity
             arsenal boasts cutting-edge tech and a vigilant expert team. Proactive and 24/7, we shield your systems with
             advanced threat intelligence, anticipating and neutralizing threats before breach. Stay empowered with our
             in-depth analysis, always one step ahead of cyber adversaries.</p>
@@ -380,7 +375,8 @@
     <header class="text-center">
       <h2 style="color: white; font-family: 'lemon-medium';">What We Offer</h2>
       <div class="row">
-        <p class="lead col-lg-8 mx-auto" style="font-family: 'poppins';">Revolutionize your business with strategic consulting, cutting-edge IT
+        <p class="lead col-lg-8 mx-auto" style="font-family: 'poppins';">Revolutionize your business with strategic
+          consulting, cutting-edge IT
           solutions, and robust cybersecurity services for growth, efficiency, and digital resilience in today's
           landscape.</p>
       </div>
@@ -398,7 +394,8 @@
         <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
           <iconify-icon icon="zondicons:education" style="color: rgb(255, 255, 255);" width="80"
             height="80"></iconify-icon>
-          <h3 class="h5" style="color: white; font-family: 'lemon-medium'; text-align: center;">Education Consulting</h3>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium'; text-align: center;">Education Consulting
+          </h3>
         </div>
       </div>
       <div class="item item1">
@@ -485,7 +482,8 @@
         <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
           <iconify-icon icon="material-symbols:inbox-customize" style="color: rgb(255, 255, 255);" width="80"
             height="80"></iconify-icon>
-          <h3 class="h5" style="color: white; font-family: 'lemon-medium'; text-align: center">Product Customisation</h3>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium'; text-align: center">Product Customisation
+          </h3>
         </div>
       </div>
       <div class="item item2">
@@ -544,7 +542,8 @@
         <div style="gap: 10px ; height: 100%" class="icon d-flex justify-content-center align-items-center flex-column">
           <iconify-icon icon="fluent-mdl2:feedback-response-solid" style="color: rgb(255, 255, 255);" width="80"
             height="80"></iconify-icon>
-          <h3 class="h5" style="color: white; font-family: 'lemon-medium'; text-align: center">Rapid Incident Response</h3>
+          <h3 class="h5" style="color: white; font-family: 'lemon-medium'; text-align: center">Rapid Incident Response
+          </h3>
         </div>
       </div>
       <div class="item item3">
@@ -705,7 +704,7 @@
       <div class="footer-cta pt-5 pb-5">
         <div class="row">
           <div class="col-xl-4 col-md-4 mb-30">
-            <div class="single-cta">
+            <div style="margin-bottom: 20px;" class="single-cta">
               <iconify-icon icon="ion:call-sharp" style="color: rgb(255, 255, 255);" width="40"
                 height="40"></iconify-icon>
               <div class="cta-text">
@@ -748,13 +747,12 @@
               <div class="footer-widget-heading">
                 <h3 style="font-family: 'lemon-medium';">Useful Links</h3>
               </div>
-              <ul>
-                <li><a style="font-family: 'poppins';" href="index.html" class="nav-link link-scroll">Home</a></li>
-                <li><a style="font-family: 'poppins';" href="#about-us" class="nav-link link-scroll">About</a></li>
-                <li><a style="font-family: 'poppins';" href="#services" class="nav-link link-scroll">Our Services</a></li>
-                <li><a style="font-family: 'poppins';" href="#what-we-offer" class="nav-link link-scroll">What We Offer</a></li>
-                <li><a style="font-family: 'poppins';" href="#contact" class="nav-link link-scroll">Contact Us</a></li>
-
+              <ul>                
+                  <li><a style="font-family: 'poppins';" href="index.html" class="nav-link link-scroll">Home</a></li>
+                  <li><a style="font-family: 'poppins';" href="#about-us" class="nav-link link-scroll">About</a></li>
+                  <li><a style="font-family: 'poppins';" href="#services" class="nav-link link-scroll">Our Services</a></li>
+                  <li><a style="font-family: 'poppins';" href="#what-we-offer" class="nav-link link-scroll">What We Offer</a></li>
+                  <li><a style="font-family: 'poppins';" href="#contact" class="nav-link link-scroll">Contact Us</a></li>              
               </ul>
             </div>
           </div>
@@ -830,7 +828,7 @@
       });
     });
 
-     (function(c,l,a,r,i,t,y){         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);     })(window, document, "clarity", "script", "kdfzwmygpk"); 
+    (function (c, l, a, r, i, t, y) { c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) }; t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(window, document, "clarity", "script", "kdfzwmygpk");
 
     AOS.init();
   </script>
