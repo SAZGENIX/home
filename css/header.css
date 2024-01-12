@@ -60,9 +60,11 @@ nav.navbar {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+/* THis is the nav links */
 .nav-item{
     /* border: 2px solid red; */
-    margin-left: 20px;
+    margin-left: 5px;
     color: black;
 }
 
@@ -73,6 +75,7 @@ nav.navbar .navbar-brand {
 }
 
 nav.navbar a.nav-link {
+    
     color: #333;
     font-size: 1.1rem;
 }
