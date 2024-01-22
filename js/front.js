@@ -36,33 +36,49 @@ $(function () {
     // ------------------------------------------------------- //
     // Scroll Top Button
     // ------------------------------------------------------- //
-    $('#scrollTop').on('click', function () {
-        $('html, body').animate({ scrollTop: 0}, 1000);
+    $(document).ready(function() {
+        $('#scrollTop').on('click', function () {
+            $('html, body').animate({ scrollTop: 0 }, 1000);
+        });
+    
+        var c, currentScrollTop = 0,
+            navbar = $('.navbar');
+        
+        // Social media icons section
+        var socialMediaSection = $('#social-media-icons-bottom');
+    
+        $(window).on('scroll', function () {
+    
+            // Navbar functionality
+            var a = $(window).scrollTop(), b = navbar.height();
+    
+            currentScrollTop = a;
+            if (c < currentScrollTop && a > b + b) {
+                navbar.addClass("scrollUp");
+            } else if (c > currentScrollTop && !(a <= b)) {
+                navbar.removeClass("scrollUp");
+            }
+            c = currentScrollTop;
+    
+            // Toggle social media icons section based on scroll position
+            if ($(window).scrollTop() >= 900) {
+                socialMediaSection.fadeIn(300); // 300 milliseconds for the fade-in effect
+            } else {
+                socialMediaSection.fadeOut(300); // 300 milliseconds for the fade-out effect
+            }
+    
+            // Add/remove active class for scrollTop button
+            if ($(window).scrollTop() >= 900) {
+                $('#scrollTop').addClass('active');
+            } else {
+                $('#scrollTop').removeClass('active');
+            }
+        });
     });
-
-    var c, currentScrollTop = 0,
-        navbar = $('.navbar');
-    $(window).on('scroll', function () {
-
-        // Navbar functionality
-        var a = $(window).scrollTop(), b = navbar.height();
-
-        currentScrollTop = a;
-        if (c < currentScrollTop && a > b + b) {
-            navbar.addClass("scrollUp");
-        } else if (c > currentScrollTop && !(a <= b)) {
-            navbar.removeClass("scrollUp");
-        }
-        c = currentScrollTop;
+    
 
 
-        if ($(window).scrollTop() >= 300) {
-            $('#scrollTop').addClass('active');
-        } else {
-            $('#scrollTop').removeClass('active');
-        }
-    });
-
+    
 
     // ---------------------------------------------------------- //
     // Preventing URL update on navigation link click
