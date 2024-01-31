@@ -68,7 +68,7 @@ $(function () {
             }
     
             // Add/remove active class for scrollTop button
-            if ($(window).scrollTop() >= 900) {
+            if ($(window).scrollTop() >= 4700) {
                 $('#scrollTop').addClass('active');
             } else {
                 $('#scrollTop').removeClass('active');
@@ -157,7 +157,6 @@ window.addEventListener("scroll", function () {
         navbar.style.position = "static";
     }
 });
-
 
 
 

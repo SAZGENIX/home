@@ -772,7 +772,7 @@ footer.main-footer .copyrights a:hover {
   height: 40px;
   position: fixed;
   right: -90px;
-  bottom: 50%;
+  bottom: 30%;
   background-color: #5989e5;
   background-image: -webkit-gradient(linear, left top, right top, from(#5989e5), to(#37cfdc));
   background-image: linear-gradient(to right, #5989e5, #37cfdc);

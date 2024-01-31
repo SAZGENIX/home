@@ -106,21 +106,22 @@
 
 
 
-.social-links {
-  position: fixed;
-  top: 70%;
-  left: 99%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  padding: 10px;
-}
 
-@media (max-width:700px) {
-  .social-links{
-    left: 97%;
-  }
-  
-}
+.social-links {
+      position: fixed;
+      top: 70%;
+      left: 99%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      padding: 10px;
+      display: none;
+    }
+
+    @media (max-width: 700px) {
+      .social-links {
+        left: 97%;
+      }
+    }
 
 /*
 .social-links a {
@@ -136,6 +137,7 @@
 }
 
 */
+
 
   </style>
 </head>
@@ -264,7 +266,7 @@
       <i class="fa fa-long-arrow-up"></i>To Top 
     </div>
 </div>  -->
-
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- Social Links -->
 <div class="social-links" id="socialLinks">
   <a href="https://www.instagram.com/sazgenix_official/" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -303,9 +305,8 @@
       
 </section> -->
 
-  <!--   
-
-    <div style="width: fit-content; padding-left: 20px; padding-right: 3px;" id="scrollTop">
+  
+    <div id="scrollTop">
 
       <div class="d-flex align-items-center justify-content-end">
         
@@ -314,7 +315,7 @@
       </div>
     
     
-    -->
+    
 
 
   <!-- About us -->
@@ -983,7 +984,21 @@
           document.querySelector('.filterList li[data-filter="' + category + '"]').classList.add('active');
         }
       });
+      
+      document.addEventListener("DOMContentLoaded", function() {
+    var socialLinks = document.getElementById("socialLinks");
 
+    window.addEventListener("scroll", function() {
+      // Adjust the threshold as needed
+      var scrollThreshold = 800;
+
+      if (window.scrollY > scrollThreshold) {
+        socialLinks.style.display = "block";
+      } else {
+        socialLinks.style.display = "none";
+      }
+    });
+  });
     AOS.init();
   </script>
 </body>
