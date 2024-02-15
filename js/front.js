@@ -163,7 +163,10 @@ window.addEventListener("scroll", function () {
 
  // Function to show the chat message after 7 seconds
  function showChatMessage() {
-    document.getElementById('chatMessage').style.display = 'block';
+    // Check if the screen width is greater than or equal to 768px
+    if (window.innerWidth >= 991) {
+        document.getElementById('chatMessage').style.display = 'block';
+    }
 }
 
 // Function to hide the chat message after 5 seconds
@@ -171,11 +174,11 @@ function hideChatMessage() {
     document.getElementById('chatMessage').style.display = 'none';
 }
 
-// Set a timeout to show the chat message after 7000 milliseconds (7 seconds)
-setTimeout(showChatMessage, 3000);
+// Set a timeout to show the chat message after 7 seconds
+setTimeout(showChatMessage, 7000);
 
-// Set a timeout to hide the chat message after 12000 milliseconds (12 seconds)
-setTimeout(hideChatMessage, 10000);
+// Set a timeout to hide the chat message after 12 seconds
+setTimeout(hideChatMessage, 12000);
 
 
 
